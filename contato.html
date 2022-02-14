@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Berga Tattoo Shop</title>
+    <link rel="stylesheet" href="reset.css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1><img src="/imagens/logoberga.png.png" alt="logo do studio" /></h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="tattoo.html">Tattoo's</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <h2 class="titulo-main">ORÇAMENTO DE TATUAGEM</h2>
+      <form>
+        <img
+          src="https://thumbs.dreamstime.com/b/m%C3%A3o-com-m%C3%A1quina-da-tatuagem-projete-o-elemento-para-cartaz-cart%C3%A3o-camisa-de-t-emblema-sinal-122413585.jpg"
+          alt=""
+        />
+        <label for="nomesobrenome">Nome e Sobrenome</label>
+        <input
+          class="input-padrao"
+          type="text"
+          id="nomesobrenome"
+          placeholder="Digite seu nome aqui"
+          required
+        />
+
+        <label for="email">E-mail</label>
+        <input
+          class="input-padrao"
+          type="email"
+          id="email"
+          placeholder="seuemail@dominio.com"
+          required
+        />
+
+        <label for="telefone">Telefone</label>
+        <input
+          class="input-padrao"
+          type="tel"
+          id="telefone"
+          placeholder="(DDD) 99999-9999"
+          required
+        />
+
+        <label for="msg">Qual a sua ideia a tattoo?</label>
+        <textarea
+          class="input-padrao"
+          id="msg"
+          cols="30"
+          rows="10"
+          placeholder="Olá, Quero fazer um orçamento! Minha idéia é..."
+          required
+        ></textarea>
+
+        <label for="atendimento">Qual horário de atendimento?</label>
+        <select class="input-padrao" id="atendimento">
+          <option value="manha">Manhã</option>
+          <option value="tarde">Tarde</option>
+          <option value="noite">Noite</option>
+        </select>
+
+        <legend>Como deseja ser contatado?</legend>
+        <label for="radio-contato">
+          <input
+            type="radio"
+            name="contato"
+            value="whatsapp"
+            id="radio-contato"
+            checked
+          />Whatsapp</label
+        >
+        <br />
+
+        <fieldset>
+          <label for="radio-email">
+            <input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radio-email"
+            />E-mail
+          </label>
+          <br />
+          <label for="radio-telefone">
+            <input type="radio" name="contato" id="radio-telefone" />Telefone
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="novidades">
+            <input type="checkbox" id="novidades" checked /> Gostaria de receber
+            nossas novidades por e-mail?
+          </label>
+        </fieldset>
+
+        <button>Enviar Formulário</button>
+      </form>
+    </main>
+
+    <footer>
+      <img class="logo-footer" src="/imagens/logoberga.png.png" />
+      <p class="copyright">&copy; Copyright Berga Tattoo Shop - 2022</p>
+    </footer>
+  </body>
+</html>
